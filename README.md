@@ -12,7 +12,7 @@ A personal project tracker that lives in a folder and runs with Claude. Includes
 | `TASKS.md` | Where your tasks live; Claude reads and writes here |
 | `CLAUDE.md` | Claude's working memory — loads every session |
 | `memory/` | Deep memory: projects, people, glossary |
-| `.claude/skills/` | Four skills that power the system |
+| `.claude/skills/` | Five skills that power the system |
 
 ---
 
@@ -37,6 +37,7 @@ Claude will orient you and tell you exactly what to do next.
 | `setup` | Add a new project to the system |
 | `add tasks` | Capture tasks from free-form input or dictation |
 | `remember that...` | Teach Claude a person, term, or project detail |
+| `personal update` | Weekly check-in — share your focus, Claude reviews all tasks and suggests changes |
 
 ---
 
@@ -46,7 +47,7 @@ Claude will orient you and tell you exactly what to do next.
 
 **Memory** builds up over time. When you introduce someone ("BTW, Priya is our new PM"), Claude writes it to `memory/people.md`. When you explain a term ("we call it the north star"), it goes to `memory/glossary.md`. Project context lives in `memory/projects/`. All of this loads automatically at the start of each session so Claude always has context.
 
-**Skills** are the four commands above. They're bundled in `.claude/skills/` so they work as soon as you open the folder — no installation or configuration needed.
+**Skills** are the five commands above. They're bundled in `.claude/skills/` so they work as soon as you open the folder — no installation or configuration needed.
 
 ---
 
@@ -87,5 +88,6 @@ KanBanKit/
         ├── start/
         ├── setup/
         ├── add-tasks/
-        └── manage-memory/
+        ├── manage-memory/
+        └── personal-update/
 ```
